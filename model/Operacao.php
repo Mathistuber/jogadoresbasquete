@@ -30,10 +30,10 @@ class Operacao{
 
         while($stmt->fetch()){
             $dica = array();
-            $dica['uid']= $uidjogador;
-            $dica['nomefruta'] = $nomejogador;
-            $dica['imgfruta'] = $imgjogador;
-            $dica['valorfruta'] = $timejogador;
+            $dica['uidjogador']= $uidjogador;
+            $dica['nomejogador'] = $nomejogador;
+            $dica['imgjogador'] = $imgjogador;
+            $dica['timejogador'] = $timejogador;
             array_push($dicas,$dica);
         }
         return $dicas;
